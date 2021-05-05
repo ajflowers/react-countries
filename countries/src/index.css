@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: Nunito Sans;
-    font-weight: 600
+  h1 {
+    @apply font-extrabold text-2xl;
+  }
+  h2 {
+    @apply font-extrabold
+  }
+  em {
+    @apply font-semibold
+  }
+  p {
+    @apply font-light
   }
 }

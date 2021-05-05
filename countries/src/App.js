@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './components/Header';
+import AllCountries from './components/AllCountries';
+
 
 function App() {
   return (
-    <div className="container mx-auto w-2/3 bg-gray-400">
-      <p>test</p>
-      
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Header/>
+        <Route exact path="/" component={AllCountries}/>
+
+        
+      </div>
+    </BrowserRouter>
   );
 }
 
